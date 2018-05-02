@@ -4,26 +4,85 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
   <h:head>
-    <title>Admin Page</title>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        h1 {
-            transition: all 2s;
-            font-family: sans-serif;
-            font-size: 18pt;
-            color: yellow;     
-            text-align: center;       
-        }
+    <title>Integración Contiinua</title>
+        <style>
+    * {box-sizing: border-box;}
+
+    body { 
+      margin: 0;
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .header {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      padding: 20px 10px;
+    }
+
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .header-right {
+        float: none;
+      }
+      p{
+        text-align: center;
+        font-size: 13px;
+        font: status-bar;
+        color: rgb();
+      }
+    }
     </style>
   </h:head>
   <h:body>
-        <h1><marquee>HELLO WORLD INTEGRACIÓN CONTINUA</marquee></h1>
-    
+    <div class="header">
+      <a href="#default" class="logo">Integración continua 💻</a>
+      <div class="header-right">
+        <a class="active" href="https://uvirtual.udem.edu.co/">Uvirtual</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.youtube.com">Youtube</a>
+      </div>
+    </div>
+  <div >
+    <h1>Todo lo puedes encontrar acá:</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yF6-KP1Wjf4" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
+    <p>La integración continua es una práctica de desarrollo de software mediante la cual los desarrolladores combinan los cambios en el código en un repositorio central de forma periódica, tras lo cual se ejecutan versiones y pruebas automáticas.</p>
+    <p>Espero que te sirva..</p>
+  </div>
   </h:body>
 </html>
 
